@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/shutdown"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="关机"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/set_screen_bright"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:text="设置屏幕亮度"
+                    android:textColor="@color/white"/>
+                
+                <EditText
+                    android:id="@+id/ed_bright"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:background="@drawable/shape_edittext"/>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/set_volume"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:text="设置音量"
+                    android:textColor="@color/white"/>
+
+                <EditText
+                    android:id="@+id/ed_volume"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:background="@drawable/shape_edittext"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/timer"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="定时开关机"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/hide_statusbar"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="隐藏导航栏"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/trace_file"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="拷贝trace文件"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/install"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="静默安装"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/ota_upgrade"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="OTA升级"
+                android:textColor="@color/white"/>
+         
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="200dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/reboot"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="重启"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/get_screen_bright"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="获取屏幕亮度"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/get_volume"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="获取音量"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/remove_timer"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="取消定时开关机"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/show_statusbar"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="显示导航栏"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/screen_shot"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="截屏"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/uninstall"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="静默卸载"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/recovery"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:text="恢复出厂设置"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
